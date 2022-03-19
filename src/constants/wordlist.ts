@@ -5,17 +5,17 @@ import { MAX_WORD_LENGTH } from './settings'
 export const WORDS = [
   'twitch', // 2022-03-19
   'wotah', // 2022-03-20
-  'degens', // 2022-03-21
-  'pewpew', // 2022-03-22
+  'pewpew', // 2022-03-21
+  'degens', // 2022-03-22
   'canada', // 2022-03-23
   'acorn', // 2022-03-24
-  'waifu', // 2022-03-25
+  'disney', // 2022-03-25
   'cheer', // 2022-03-26
   'quokka', // 2022-03-27
   'crezy', // 2022-03-28
   'arose', // 2022-03-29
   'wordle', // 2022-03-30
-  'disney', // 2022-03-31
+  'waifu', // 2022-03-31
   'cutie', // 2022-04-01
   'clappy', // 2022-04-02
   '', // 2022-04-03
