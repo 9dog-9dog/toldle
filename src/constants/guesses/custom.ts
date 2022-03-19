@@ -115,6 +115,10 @@ export const CUSTOM_GUESSES = [
   'foofy',
   'nyang',
   'mrland',
+  'tensor',
+  'raliu',
+  'gudog',
+  'goodog',
 
   // other streamers
   'jinri',
