@@ -1,3 +1,7 @@
+import { MAX_WORD_LENGTH } from './settings'
+
+// NOTE(9dog): The guesses should have tailing space
+// if their length is less than MAX_WORD_LENGTH
 export const WORDS = [
   'which',
   'there',
@@ -5756,4 +5760,4 @@ export const WORDS = [
   'rumba',
   'biffy',
   'pupal',
-]
+].map((word) => word.padEnd(MAX_WORD_LENGTH))

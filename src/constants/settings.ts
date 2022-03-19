@@ -1,6 +1,8 @@
 import { solution } from '../lib/words'
 
-export const MAX_WORD_LENGTH = solution.length
+// NOTE(9dog): The answer can be either 5 or 6 characters.
+export const MIN_WORD_LENGTH = 5
+export const MAX_WORD_LENGTH = 6
 export const MAX_CHALLENGES = 6
 export const ALERT_TIME_MS = 2000
 export const REVEAL_TIME_MS = 350

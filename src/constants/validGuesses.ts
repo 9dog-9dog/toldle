@@ -1,3 +1,7 @@
+import { MAX_WORD_LENGTH } from './settings'
+
+// NOTE(9dog): The guesses should have tailing space
+// if their length is less than MAX_WORD_LENGTH
 export const VALID_GUESSES = [
   'aahed',
   'aalii',
@@ -12971,4 +12975,4 @@ export const VALID_GUESSES = [
   'zygon',
   'zymes',
   'zymic',
-]
+].map((word) => word.padEnd(MAX_WORD_LENGTH))
