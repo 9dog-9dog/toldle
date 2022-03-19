@@ -23,7 +23,17 @@ export const Navbar = ({
           className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
-        <p className="text-xl ml-2.5 font-bold dark:text-white">{GAME_TITLE}</p>
+        <p className="ml-2.5 flex flex-row">
+          <div className="pt-1 mr-2 text-4xl font-bold dark:text-white">
+            {GAME_TITLE}
+          </div>
+          <img
+            className=""
+            height="42px"
+            width="42px"
+            src={`${process.env.PUBLIC_URL}/dotolDotol.gif`}
+          />
+        </p>
         <div className="right-icons">
           <ChartBarIcon
             className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
