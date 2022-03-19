@@ -259,8 +259,14 @@ function App() {
             isRevealing={isRevealing}
             currentRowClassName={currentRowClass}
           />
-          <div className="flex justify-center mb-1 ">
-            The answer is a 5 or 6-letter word.
+          <div className="flex justify-center mb-1 text-gray-500 dark:text-gray-300">
+            1. You can guess with any common words.
+          </div>
+          <div className="flex justify-center mb-1 text-gray-500 dark:text-gray-300">
+            2. The final answer will be something related to Dotol.
+          </div>
+          <div className="flex justify-center text-gray-500 dark:text-gray-300">
+            3. The words can have either 5 or 6 letters.
           </div>
         </div>
         <Keyboard

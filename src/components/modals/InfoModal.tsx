@@ -9,12 +9,14 @@ type Props = {
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+      <p className="mb-1 text-sm text-gray-500 dark:text-gray-300">
+        1. You can guess with any common words.
+      </p>
+      <p className="mb-1 text-sm text-gray-500 dark:text-gray-300">
+        2. the final answer will be something related to Dotol.
       </p>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        <strong>THE WORDS CAN HAVE EITHER 5 OR 6 CHARACTERS.</strong>
+        3. <strong>THE WORDS CAN HAVE EITHER 5 OR 6 LETTERS.</strong>
       </p>
       <div className="flex justify-center mb-1 mt-4">
         <Cell
@@ -57,10 +59,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value=" " />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter E's are in the word but in the wrong spots.
-      </p>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        Also, there are two E's in the word.
+        There are two E's in the word but in the wrong spots.
       </p>
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="D" />
