@@ -13,6 +13,9 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         Guess the word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word.
       </p>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        <strong>THE WORDS CAN HAVE EITHER 5 OR 6 CHARACTERS.</strong>
+      </p>
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
@@ -24,9 +27,16 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="T" />
         <Cell value="O" />
         <Cell value="L" />
+        <Cell
+          value=" "
+          isRevealing={true}
+          isCompleted={true}
+          status="correct"
+        />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter D is in the word and in the correct spot.
+        The letter D is in the word and in the correct spot. Also, the answer is
+        a 5-letter word.
       </p>
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="S" />
@@ -37,14 +47,20 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           value="E"
           status="present"
         />
-        <Cell value="E" />
+        <Cell
+          isRevealing={true}
+          isCompleted={true}
+          value="E"
+          status="present"
+        />
         <Cell value="P" />
+        <Cell value=" " />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter E is in the word but in the wrong spot.
+        The letter E's are in the word but in the wrong spots.
       </p>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Also, there is only one E in the word.
+        Also, there are two E's in the word.
       </p>
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="D" />
@@ -52,6 +68,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="G" />
         <Cell value="E" />
         <Cell isRevealing={true} isCompleted={true} value="N" status="absent" />
+        <Cell value="S" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter N is not in the word in any spot.

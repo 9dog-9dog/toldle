@@ -259,6 +259,9 @@ function App() {
             isRevealing={isRevealing}
             currentRowClassName={currentRowClass}
           />
+          <div className="flex justify-center mb-1 ">
+            The answer is a 5 or 6-letter word.
+          </div>
         </div>
         <Keyboard
           onChar={onChar}
