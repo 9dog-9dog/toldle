@@ -62,6 +62,7 @@ export const StatsModal = ({
           height="60px"
           width="60px"
           src={`${process.env.PUBLIC_URL}/dotolClap.gif`}
+          alt="Game won"
         />
       )}
       {isGameLost && (
@@ -70,6 +71,7 @@ export const StatsModal = ({
           height="60px"
           width="60px"
           src={`${process.env.PUBLIC_URL}/dotolExhausted.gif`}
+          alt="Game lost"
         />
       )}
       <StatBar gameStats={gameStats} />

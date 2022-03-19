@@ -1,5 +1,3 @@
-import { solution } from '../lib/words'
-
 // NOTE(9dog): The answer can be either 5 or 6 characters.
 export const MIN_WORD_LENGTH = 5
 export const MAX_WORD_LENGTH = 6

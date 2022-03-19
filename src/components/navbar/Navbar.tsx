@@ -32,6 +32,7 @@ export const Navbar = ({
             height="42px"
             width="42px"
             src={`${process.env.PUBLIC_URL}/dotolDotol.gif`}
+            alt="TOLDLE title pic"
           />
         </p>
         <div className="right-icons">
