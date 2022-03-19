@@ -15,9 +15,12 @@ const additionalGuesses = [
   'acorns',
   'shrimp',
   'korea',
+  'korean',
   'canada',
   'waifu',
   'waifus',
+  'juseyo',
+  'idktp',
 
   'teach',
   'nibble',
@@ -70,10 +73,13 @@ const additionalGuesses = [
   'styles',
   'damien',
   'james',
+  'largo',
+  'adagio',
 
   // media
   'harry',
   'potter',
+  'draco',
   'disney',
   'mickey',
   'minnie',
@@ -87,6 +93,7 @@ const additionalGuesses = [
   'pewpew',
   'fight',
   'arose',
+  'lucio',
 
   // emotes
   'claps',
@@ -101,6 +108,7 @@ const additionalGuesses = [
   'bobble',
   'crezy',
   'quokka',
+  'blush',
 
   // viewers
   'camel',
@@ -571,6 +579,7 @@ const fiveLetterGuesses = [
   'flash',
   'fleet',
   'flesh',
+  'flies',
   'float',
   'flood',
   'floor',
@@ -2701,6 +2710,8 @@ const sixLetterGuesses = [
   'slight',
   'slovak',
   'slowly',
+  'smells',
+  'smelly',
   'smooth',
   'soccer',
   'social',
@@ -2862,6 +2873,7 @@ const sixLetterGuesses = [
   'tribal',
   'tribes',
   'tricks',
+  'tricky',
   'triple',
   'trivia',
   'troops',
