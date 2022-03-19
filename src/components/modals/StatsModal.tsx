@@ -56,6 +56,22 @@ export const StatsModal = ({
       isOpen={isOpen}
       handleClose={handleClose}
     >
+      {isGameWon && (
+        <img
+          className="mx-auto"
+          height="60px"
+          width="60px"
+          src={`${process.env.PUBLIC_URL}/dotolClap.gif`}
+        />
+      )}
+      {isGameLost && (
+        <img
+          className="mx-auto"
+          height="60px"
+          width="60px"
+          src={`${process.env.PUBLIC_URL}/dotolExhausted.gif`}
+        />
+      )}
       <StatBar gameStats={gameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
         {GUESS_DISTRIBUTION_TEXT}
