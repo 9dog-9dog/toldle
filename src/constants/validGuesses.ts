@@ -109,6 +109,19 @@ const additionalGuesses = [
   'foofy',
   'nyang',
   'mrland',
+
+  // other streamers
+  'jinri',
+  'minzi',
+  'kingu',
+  'jaemi',
+  'dowon',
+  'lethi',
+  'hsbyl',
+  'hanby',
+  'lessa',
+  'juelia',
+  'bubbly',
 ].map((word) => word.padEnd(MAX_WORD_LENGTH).toLocaleLowerCase())
 
 const fiveLetterGuesses = [
