@@ -266,7 +266,7 @@ function App() {
           />
           {!showHint && (
             <div
-              className="flex justify-center mb-1 text-gray-500 dark:text-gray-300"
+              className="flex justify-center mt-3 mb-1 text-gray-500 dark:text-gray-300"
               onClick={() => setShowHint(true)}
             >
               <button className="border-solid border-4 p-2 rounded-md">
@@ -275,9 +275,8 @@ function App() {
             </div>
           )}
           {showHint && (
-            <div className="flex justify-center mb-1 text-green-500 dark:text-green-300">
-              Today's word has{' '}
-              {wordOfDay.solution.trim().length === 5 ? 'five' : 'six'} letters
+            <div className="flex justify-center mt-3 mb-1 text-green-500 dark:text-green-300">
+              Today's word has {wordOfDay.solution.trim().length} letters
             </div>
           )}
           <div className="flex justify-center mb-1 text-gray-500 dark:text-gray-300">
