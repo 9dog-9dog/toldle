@@ -119,6 +119,14 @@ export const CUSTOM_GUESSES = [
   'quokka',
   'blush',
 
+  // pepe
+  'pepes',
+  'peepee',
+  'peepo',
+  'peepos',
+  'pepega',
+  'pepog',
+
   // viewers
   'camel',
   'vrolen',
