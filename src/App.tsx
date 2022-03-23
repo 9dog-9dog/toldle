@@ -26,6 +26,7 @@ import {
   solution,
   findFirstUnusedReveal,
   unicodeLength,
+  getWordOfDay,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
@@ -91,6 +92,8 @@ function App() {
       ? localStorage.getItem('gameMode') === 'hard'
       : false
   )
+
+  const [showHint, setShowHint] = useState<boolean>(false)
 
   useEffect(() => {
     // if no game state on load,
@@ -244,6 +247,8 @@ function App() {
     }
   }
 
+  const wordOfDay = getWordOfDay()
+
   return (
     <div className="h-screen flex flex-col">
       <Navbar
@@ -259,6 +264,22 @@ function App() {
             isRevealing={isRevealing}
             currentRowClassName={currentRowClass}
           />
+          {!showHint && (
+            <div
+              className="flex justify-center mb-1 text-gray-500 dark:text-gray-300"
+              onClick={() => setShowHint(true)}
+            >
+              <button className="border-solid border-4 p-2 rounded-md">
+                Click to get hint
+              </button>
+            </div>
+          )}
+          {showHint && (
+            <div className="flex justify-center mb-1 text-green-500 dark:text-green-300">
+              Today's word has{' '}
+              {wordOfDay.solution.trim().length === 5 ? 'five' : 'six'} letters
+            </div>
+          )}
           <div className="flex justify-center mb-1 text-gray-500 dark:text-gray-300">
             1. You can guess with any common words.
           </div>
