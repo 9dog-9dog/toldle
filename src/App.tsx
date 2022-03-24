@@ -265,11 +265,11 @@ function App() {
             currentRowClassName={currentRowClass}
           />
           {!showHint && (
-            <div
-              className="flex justify-center mt-3 mb-1 text-gray-500 dark:text-gray-300"
-              onClick={() => setShowHint(true)}
-            >
-              <button className="border-solid border-4 p-2 rounded-md">
+            <div className="flex justify-center mt-3 mb-1 text-gray-500 dark:text-gray-300">
+              <button
+                className="border-solid border-4 p-2 rounded-md"
+                onClick={() => setShowHint(true)}
+              >
                 Click to get hint
               </button>
             </div>
