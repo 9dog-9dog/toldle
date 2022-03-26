@@ -3,7 +3,7 @@ import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
-import { tomorrow } from '../../lib/words'
+import { getWordOfDay, tomorrow } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
   STATISTICS_TITLE,
@@ -24,6 +24,26 @@ type Props = {
   isDarkMode: boolean
   isHighContrastMode: boolean
   numberOfGuessesMade: number
+}
+
+const getWinnerPic = (answer: string): string => {
+  switch (answer.toLocaleLowerCase().trim()) {
+    case 'disney':
+      return 'dotolMinnie.png'
+    case 'drive':
+      return 'idiotolDance.gif'
+    default:
+      return 'ClappyTol.gif'
+  }
+}
+
+const getStatisticsMessage = (answer: string): string => {
+  switch (answer.toLocaleLowerCase().trim()) {
+    case 'drive':
+      return 'Have fun with driving test'
+    default:
+      return STATISTICS_TITLE
+  }
 }
 
 export const StatsModal = ({
@@ -50,9 +70,16 @@ export const StatsModal = ({
       </BaseModal>
     )
   }
+
+  const wordOfDay = getWordOfDay()
+  const winnerPicSrc = `${process.env.PUBLIC_URL}/${getWinnerPic(
+    wordOfDay.solution
+  )}`
+  const statisticsMessage = getStatisticsMessage(wordOfDay.solution)
+
   return (
     <BaseModal
-      title={STATISTICS_TITLE}
+      title={statisticsMessage}
       isOpen={isOpen}
       handleClose={handleClose}
     >
@@ -61,7 +88,7 @@ export const StatsModal = ({
           className="mx-auto"
           height="60px"
           width="60px"
-          src={`${process.env.PUBLIC_URL}/dotolClap.gif`}
+          src={winnerPicSrc}
           alt="Game won"
         />
       )}
