@@ -30,6 +30,8 @@ const getWinnerPic = (answer: string): string => {
   switch (answer.toLocaleLowerCase().trim()) {
     case 'disney':
       return 'dotolMinnie.png'
+    case 'nibble':
+      return 'nibble.gif'
     case 'drive':
       return 'idiotolDance.gif'
     default:
@@ -86,8 +88,8 @@ export const StatsModal = ({
       {isGameWon && (
         <img
           className="mx-auto"
-          height="60px"
-          width="60px"
+          height="105px"
+          width="120px"
           src={winnerPicSrc}
           alt="Game won"
         />
