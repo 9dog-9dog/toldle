@@ -37,7 +37,7 @@ const getWinnerPic = (answer: string): string => {
     case 'cheer':
       return 'dotolCheer.gif'
     case 'drive':
-      return 'idiotolDance.gif'
+      return 'monkaDriving.gif'
     default:
       return 'ClappyTol.gif'
   }
@@ -46,7 +46,7 @@ const getWinnerPic = (answer: string): string => {
 const getStatisticsMessage = (answer: string): string => {
   switch (answer.toLocaleLowerCase().trim()) {
     case 'drive':
-      return 'Have fun with driving test'
+      return 'Have fun with the driving test tomorrow'
     case 'camel':
       return "Tol's imaginary sister and friend"
     case 'cheer':
