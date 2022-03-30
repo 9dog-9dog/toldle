@@ -32,6 +32,10 @@ const getWinnerPic = (answer: string): string => {
       return 'dotolMinnie.png'
     case 'nibble':
       return 'nibble.gif'
+    case 'camel':
+      return 'camel.gif'
+    case 'cheer':
+      return 'dotolCheer.gif'
     case 'drive':
       return 'idiotolDance.gif'
     default:
@@ -43,6 +47,10 @@ const getStatisticsMessage = (answer: string): string => {
   switch (answer.toLocaleLowerCase().trim()) {
     case 'drive':
       return 'Have fun with driving test'
+    case 'camel':
+      return "Tol's imaginary sister and friend"
+    case 'cheer':
+      return 'Cheers to the ones here today'
     default:
       return STATISTICS_TITLE
   }
@@ -88,8 +96,8 @@ export const StatsModal = ({
       {isGameWon && (
         <img
           className="mx-auto"
-          height="105px"
-          width="120px"
+          height="80px"
+          width="80px"
           src={winnerPicSrc}
           alt="Game won"
         />
