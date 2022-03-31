@@ -64,6 +64,10 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
       return 'Can Tol dance better than this?'
     case 'snore':
       return "This is April Fool's joke. Tol never snores."
+    case 'sekush':
+      return "It's still April Fool's day somewhere (but not in Korea!)"
+    case 'sleep':
+      return 'GO TO BED TOL dotolBedtime'
     case 'waifu':
       return 'How many of them does Tol have?'
     default:
