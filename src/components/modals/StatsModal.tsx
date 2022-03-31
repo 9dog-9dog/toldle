@@ -11,6 +11,7 @@ import {
   NEW_WORD_TEXT,
   SHARE_TEXT,
 } from '../../constants/strings'
+import { useEffect } from 'react'
 
 type Props = {
   isOpen: boolean
@@ -38,12 +39,20 @@ const getWinnerPic = (answer: string): string => {
       return 'dotolCheer.gif'
     case 'drive':
       return 'monkaDriving.gif'
+    case 'aespa':
+      return 'nextLevel216.gif'
+    case 'snore':
+      return 'dotolClown.png'
     default:
       return 'ClappyTol.gif'
   }
 }
 
-const getStatisticsMessage = (answer: string): string => {
+const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
+  if (!isGameWon) {
+    return STATISTICS_TITLE
+  }
+
   switch (answer.toLocaleLowerCase().trim()) {
     case 'drive':
       return 'Have fun with the driving test tomorrow'
@@ -51,6 +60,12 @@ const getStatisticsMessage = (answer: string): string => {
       return "Tol's imaginary sister and friend"
     case 'cheer':
       return 'Cheers to the ones here today'
+    case 'aespa':
+      return 'Tol can dance better than this.'
+    case 'snore':
+      return "This is April Fool's joke. Tol never snores."
+    case 'waifu':
+      return 'How many of them does Tol have?'
     default:
       return STATISTICS_TITLE
   }
@@ -69,6 +84,20 @@ export const StatsModal = ({
   isHighContrastMode,
   numberOfGuessesMade,
 }: Props) => {
+  const wordOfDay = getWordOfDay()
+  const winnerPicSrc = `${process.env.PUBLIC_URL}/${getWinnerPic(
+    wordOfDay.solution
+  )}`
+  const statisticsMessage = getStatisticsMessage(isGameWon, wordOfDay.solution)
+
+  // Prefetch the winner image. The goal of this useEffect is to load the image
+  // after the page is loaded, so that the stats modal will just reuse
+  // the cached one.
+  useEffect(() => {
+    const image = new Image()
+    image.src = winnerPicSrc
+  }, [])
+
   if (gameStats.totalGames <= 0) {
     return (
       <BaseModal
@@ -81,12 +110,6 @@ export const StatsModal = ({
     )
   }
 
-  const wordOfDay = getWordOfDay()
-  const winnerPicSrc = `${process.env.PUBLIC_URL}/${getWinnerPic(
-    wordOfDay.solution
-  )}`
-  const statisticsMessage = getStatisticsMessage(wordOfDay.solution)
-
   return (
     <BaseModal
       title={statisticsMessage}
@@ -96,8 +119,7 @@ export const StatsModal = ({
       {isGameWon && (
         <img
           className="mx-auto"
-          height="80px"
-          width="80px"
+          width="216px"
           src={winnerPicSrc}
           alt="Game won"
         />
