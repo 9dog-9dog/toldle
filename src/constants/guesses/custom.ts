@@ -98,6 +98,8 @@ export const CUSTOM_GUESSES = [
   'wordle',
   'nerdle',
   'dordle',
+  'toldle',
+  'lewdle',
   'legend',
   'pewpew',
   'fight',
@@ -146,6 +148,10 @@ export const CUSTOM_GUESSES = [
   'wookie',
   'wooki',
   'wooky',
+  'zealf',
+  'carni',
+  'carniv',
+  'brian',
 
   // other streamers
   'jinri',
