@@ -42,7 +42,7 @@ const getWinnerPic = (answer: string): string => {
     case 'aespa':
       return 'nextLevel216.gif'
     case 'snore':
-      return 'dotolClown.png'
+      return 'dotolClowning.gif'
     default:
       return 'ClappyTol.gif'
   }
@@ -96,7 +96,7 @@ export const StatsModal = ({
   useEffect(() => {
     const image = new Image()
     image.src = winnerPicSrc
-  }, [])
+  }, [winnerPicSrc])
 
   if (gameStats.totalGames <= 0) {
     return (
@@ -119,7 +119,7 @@ export const StatsModal = ({
       {isGameWon && (
         <img
           className="mx-auto"
-          width="216px"
+          width="112px"
           src={winnerPicSrc}
           alt="Game won"
         />
