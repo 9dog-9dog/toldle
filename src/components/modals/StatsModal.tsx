@@ -61,7 +61,7 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
     case 'cheer':
       return 'Cheers to the ones here today'
     case 'aespa':
-      return 'Tol can dance better than this.'
+      return 'Can Tol dance better than this?'
     case 'snore':
       return "This is April Fool's joke. Tol never snores."
     case 'waifu':
