@@ -20,6 +20,8 @@ export const CUSTOM_GUESSES = [
   'waifus',
   'juseyo',
   'idktp',
+  'sekush',
+  'sekusi',
 
   'juzeyo',
   'juseyo',

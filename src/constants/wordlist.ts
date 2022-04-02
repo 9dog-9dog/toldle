@@ -34,7 +34,7 @@ export const WORDS = [
 
   'tricky', // 2022-04-11
   '', // 2022-04-12
-  '', // 2022-04-13
+  'drives', // 2022-04-13
   '', // 2022-04-14
   '', // 2022-04-15
 ].map((word) => word.padEnd(MAX_WORD_LENGTH))
