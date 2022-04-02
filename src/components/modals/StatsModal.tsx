@@ -43,6 +43,8 @@ const getWinnerPic = (answer: string): string => {
       return 'nextLevel216.gif'
     case 'snore':
       return 'dotolClowning.gif'
+    case 'sekush':
+      return 'pepeSekushi.png'
     default:
       return 'ClappyTol.gif'
   }
@@ -65,7 +67,7 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
     case 'snore':
       return "This is April Fool's joke. Tol never snores."
     case 'sekush':
-      return "It's still April Fool's day somewhere (but not in Korea!)"
+      return "It's still April Fool's day somewhere.. right?"
     case 'sleep':
       return 'GO TO BED TOL dotolBedtime'
     case 'waifu':
@@ -121,12 +123,7 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       {isGameWon && (
-        <img
-          className="mx-auto"
-          width="112px"
-          src={winnerPicSrc}
-          alt="Game won"
-        />
+        <img className="mx-auto" src={winnerPicSrc} alt="Game won" />
       )}
       {isGameLost && (
         <img
