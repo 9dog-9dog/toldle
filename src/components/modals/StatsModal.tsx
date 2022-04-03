@@ -46,7 +46,7 @@ const getWinnerPic = (answer: string): string => {
     case 'sekush':
       return 'pepeSekushi.png'
     case 'billie':
-      return 'dotolbday.bmp'
+      return 'dotolOlder.png'
     default:
       return 'ClappyTol.gif'
   }
@@ -71,7 +71,7 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
     case 'sekush':
       return "It's still April Fool's day somewhere.. right?"
     case 'billie':
-      return 'Both Billie Eilish and Tol can say "when I was older"'
+      return 'Both Billie Eilish and Dotol Kim can say "when I was older"'
     case 'sleep':
       return 'GO TO BED TOL dotolBedtime'
     case 'waifu':
