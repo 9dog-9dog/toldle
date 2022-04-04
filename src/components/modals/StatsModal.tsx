@@ -47,6 +47,8 @@ const getWinnerPic = (answer: string): string => {
       return 'pepeSekushi.png'
     case 'billie':
       return 'dotolOlder.png'
+    case 'laptop':
+      return 'pepeLaptop_complete.png'
     case 'sleep':
       return 'dotolYessleep_pepe.bmp'
     default:
@@ -74,6 +76,8 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
       return "It's still April Fool's day somewhere.. right?"
     case 'billie':
       return 'Both Billie Eilish and Dotol Kim can say "when I was older"'
+    case 'laptop':
+      return 'Everyone, Tol said she needs more money for laptop'
     case 'sleep':
       return 'GO TO BED TOL dotolBedtime'
     case 'waifu':
@@ -129,7 +133,12 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       {isGameWon && (
-        <img className="mx-auto" src={winnerPicSrc} alt="Game won" />
+        <img
+          className="mx-auto"
+          width="644px"
+          src={winnerPicSrc}
+          alt="Game won"
+        />
       )}
       {isGameLost && (
         <img
