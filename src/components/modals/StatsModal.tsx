@@ -133,12 +133,7 @@ export const StatsModal = ({
       handleClose={handleClose}
     >
       {isGameWon && (
-        <img
-          className="mx-auto"
-          width="644px"
-          src={winnerPicSrc}
-          alt="Game won"
-        />
+        <img className="mx-auto" src={winnerPicSrc} alt="Game won" />
       )}
       {isGameLost && (
         <img
