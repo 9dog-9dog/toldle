@@ -47,6 +47,8 @@ const getWinnerPic = (answer: string): string => {
       return 'pepeSekushi.png'
     case 'billie':
       return 'dotolOlder.png'
+    case 'sleep':
+      return 'dotolYessleep_pepe.bmp'
     default:
       return 'ClappyTol.gif'
   }
