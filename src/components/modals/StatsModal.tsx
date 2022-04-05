@@ -49,6 +49,8 @@ const getWinnerPic = (answer: string): string => {
       return 'dotolOlder.png'
     case 'laptop':
       return 'pepeLaptop_complete.png'
+    case 'mrland':
+      return 'mrlandCombined.bmp'
     case 'sleep':
       return 'dotolYessleep_pepe.bmp'
     default:
@@ -78,6 +80,8 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
       return 'Both Billie Eilish and Dotol Kim can say "when I was older"'
     case 'laptop':
       return 'Everyone, Tol said she needs more money for laptop'
+    case 'mrland':
+      return "Tol's introverted viking brother and also her favourite Toldle opener"
     case 'sleep':
       return 'GO TO BED TOL dotolBedtime'
     case 'waifu':
