@@ -40,7 +40,7 @@ export const WORDS = [
 
   'travel', // 2022-04-16
   'flight', // 2022-04-17
-  '', // 2022-04-18
+  'thanku', // 2022-04-18
   '', // 2022-04-19
   '', // 2022-04-20
 ].map((word) => word.padEnd(MAX_WORD_LENGTH))

@@ -51,6 +51,8 @@ const getWinnerPic = (answer: string): string => {
       return 'pepeLaptop_complete.png'
     case 'mrland':
       return 'mrlandCombined.bmp'
+    case 'waifu':
+      return 'waifus.png'
     case 'sleep':
       return 'dotolYessleep_pepe.bmp'
     default:
