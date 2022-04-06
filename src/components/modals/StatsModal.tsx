@@ -52,7 +52,7 @@ const getWinnerPic = (answer: string): string => {
     case 'mrland':
       return 'mrlandCombined.bmp'
     case 'waifu':
-      return 'waifus.png'
+      return 'waifus2.png'
     case 'sleep':
       return 'dotolYessleep_pepe.bmp'
     default:
@@ -87,7 +87,7 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
     case 'sleep':
       return 'GO TO BED TOL dotolBedtime'
     case 'waifu':
-      return 'How many of them does Tol have?'
+      return 'How many waifus does Tol have?'
     default:
       return STATISTICS_TITLE
   }
