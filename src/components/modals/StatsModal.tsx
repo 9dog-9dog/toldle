@@ -54,7 +54,7 @@ const getWinnerPic = (answer: string): string => {
     case 'waifu':
       return 'waifu2.png'
     case 'sleep':
-      return 'dotolYessleep_pepe.bmp'
+      return 'room.png'
     default:
       return 'ClappyTol.gif'
   }
@@ -85,7 +85,7 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
     case 'mrland':
       return "Tol's introverted viking brother and also her favourite Toldle opener"
     case 'sleep':
-      return 'GO TO BED TOL dotolBedtime'
+      return "Don't fall asleep on the floor"
     case 'waifu':
       return 'How many waifus does Tol have?'
     default:
