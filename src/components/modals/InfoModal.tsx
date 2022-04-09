@@ -14,29 +14,32 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
       <p className="mb-2 text-lg text-gray-500 dark:text-gray-300">&nbsp;</p>
       <p className="mb-2 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        Hello, this is 9dog, the creator of TOLDLE.
+        Thanks for playing TOLDLE. This is 9dog, the creator of the game.
+      </p>
+      <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300"></p>
+      <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
+        I would like to let you know that the last daily TOLDLE will be on April
+        11, 2022. After that, I will probably make it free mode with no daily
+        wait, but for now things are up in the air.
       </p>
       <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        Thanks for playing TOLDLE. Time flies and I can't believe it already
-        passed its 21st day.
+        The biggest reason for closing is that I have no more good answers. Just
+        like other fan games, I expected TOLDLE to be tried 1~2 times and gone.
+        I can't believe it passed its 21st day.
       </p>
       <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        I enjoyed every moment I worked on this game and watched Tol and other
-        people playing. I hope that you also had a good time.
+        I am sure that Tol's life is filled with many interesting events and
+        names like Harry Potter, but unfortunately, most of them are not
+        officially published.
       </p>
       <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        Unfortunately, I am now running out of good answers. I can still find
-        more words for the game, but I'm afraid they won't be interesting
+        I can still find more words, but I'm afraid they won't be so interesting
         anymore. I think now is a right time to end the game before it loses its
         quality.
       </p>
       <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        The last daily TOLDLE will be on April 11, 2022. After that, I will
-        probably make it playable in the free mode with no daily wait, but for
-        now everything is up in the air.
-      </p>
-      <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        Thanks again for playing and reading this!
+        I enjoyed every moment working on this game and watched Tol and other
+        people playing. I hope you also had a good time.
       </p>
       {/*
       <p className="mb-1 text-sm text-gray-500 dark:text-gray-300">
