@@ -57,6 +57,8 @@ const getWinnerPic = (answer: string): string => {
       return 'room.png'
     case 'think':
       return 'thinkFull.png'
+    case 'lurker':
+      return 'lurker.png'
     default:
       return 'ClappyTol.gif'
   }
@@ -92,6 +94,8 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
       return 'How many waifus does Tol have?'
     case 'think':
       return "Tol's usual Wordle opener and also what she does when not streaming"
+    case 'lurker':
+      return "Lurkers are welcome in Tol's stream"
     default:
       return STATISTICS_TITLE
   }

@@ -29,18 +29,18 @@ export const WORDS = [
   'waifu', // 2022-04-06
   'sleep', // 2022-04-07
   'think', // 2022-04-08
-  'family', // 2022-04-09
-  'surviv', // 2022-04-10
+  'lurker', // 2022-04-09
+  'ordler', // 2022-04-10
 
-  'tricky', // 2022-04-11
-  'drives', // 2022-04-12
-  'fight', // 2022-04-13
+  'thanku', // 2022-04-11
+
+  // unused
+  'ordler', // 2022-04-12
+  'family', // 2022-04-13
   'mamma', // 2022-04-14
-  'shrimp', // 2022-04-15
+  'travel', // 2022-04-15
 
-  'travel', // 2022-04-16
   'flight', // 2022-04-17
   'thanku', // 2022-04-18
-  '', // 2022-04-19
-  '', // 2022-04-20
+  'surviv', // 2022-04-19
 ].map((word) => word.padEnd(MAX_WORD_LENGTH))
