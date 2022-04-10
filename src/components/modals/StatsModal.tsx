@@ -59,6 +59,8 @@ const getWinnerPic = (answer: string): string => {
       return 'thinkFull.png'
     case 'lurker':
       return 'lurker.png'
+    case 'uturn':
+      return 'uturn.png'
     default:
       return 'ClappyTol.gif'
   }
