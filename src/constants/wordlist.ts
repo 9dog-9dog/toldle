@@ -30,7 +30,7 @@ export const WORDS = [
   'sleep', // 2022-04-07
   'think', // 2022-04-08
   'lurker', // 2022-04-09
-  'ordler', // 2022-04-10
+  'uturn', // 2022-04-10
 
   'thanku', // 2022-04-11
 

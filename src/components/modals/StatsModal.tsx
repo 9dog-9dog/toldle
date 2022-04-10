@@ -96,6 +96,8 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
       return "Tol's usual Wordle opener and also what she does when not streaming"
     case 'lurker':
       return "Lurkers are welcome in Tol's stream"
+    case 'uturn':
+      return 'Trivia: Tol did u-turn on a red light and failed her first driving test'
     default:
       return STATISTICS_TITLE
   }
