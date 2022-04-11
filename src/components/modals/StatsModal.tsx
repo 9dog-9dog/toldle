@@ -61,6 +61,8 @@ const getWinnerPic = (answer: string): string => {
       return 'lurker.png'
     case 'uturn':
       return 'uturn.png'
+    case 'thanku':
+      return 'monopoly.png'
     default:
       return 'ClappyTol.gif'
   }
@@ -100,6 +102,8 @@ const getStatisticsMessage = (isGameWon: boolean, answer: string): string => {
       return "Lurkers are welcome in Tol's stream"
     case 'uturn':
       return 'Trivia: Tol did u-turn on a red light and failed her first driving test'
+    case 'thanku':
+      return 'Thanks for playing the last daily TOLDLE. Hope you enjoyed it.'
     default:
       return STATISTICS_TITLE
   }
