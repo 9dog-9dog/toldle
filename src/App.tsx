@@ -260,10 +260,10 @@ function App() {
         <div className="mb-5 flex justify-center mb-1 text-gray-500 dark:text-gray-300">
           <img src="dotolDotolHardhat.png" />
         </div>
-        <h1 className="flex text-2xl justify-center mb-1 text-gray-500 dark:text-gray-300">
+        <h1 className="flex text-2xl text-center justify-center mb-1 text-gray-500 dark:text-gray-300">
           Thanks for visiting TOLDLE.
         </h1>
-        <h1 className="flex text-2xl justify-center mb-1 text-gray-500 dark:text-gray-300">
+        <h1 className="flex text-2xl text-center justify-center mb-1 text-gray-500 dark:text-gray-300">
           This site is under construction until further notice.
         </h1>
         {/*
