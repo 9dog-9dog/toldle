@@ -257,6 +257,16 @@ function App() {
         setIsSettingsModalOpen={setIsSettingsModalOpen}
       />
       <div className="pt-2 px-1 pb-8 md:max-w-7xl w-full mx-auto sm:px-6 lg:px-8 flex flex-col grow">
+        <div className="mb-5 flex justify-center mb-1 text-gray-500 dark:text-gray-300">
+          <img src="dotolDotolHardhat.png" />
+        </div>
+        <h1 className="flex text-2xl justify-center mb-1 text-gray-500 dark:text-gray-300">
+          Thanks for visiting TOLDLE.
+        </h1>
+        <h1 className="flex text-2xl justify-center mb-1 text-gray-500 dark:text-gray-300">
+          This site is under construction until further notice.
+        </h1>
+        {/*
         <div className="pb-6 grow">
           <Grid
             guesses={guesses}
@@ -296,6 +306,7 @@ function App() {
           guesses={guesses}
           isRevealing={isRevealing}
         />
+          */}
         <InfoModal
           isOpen={isInfoModalOpen}
           handleClose={() => setIsInfoModalOpen(false)}
