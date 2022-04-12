@@ -10,17 +10,16 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="News" isOpen={isOpen} handleClose={handleClose}>
       <p className="mt-5 mb-5 text-3xl text-gray-500 dark:text-gray-300">
-        Daily TOLDLE is ending on April 11, 2022.
+        Daily TOLDLE ended on April 11, 2022.
       </p>
       <p className="mb-2 text-lg text-gray-500 dark:text-gray-300">&nbsp;</p>
       <p className="mb-2 mb-5 text-lg text-gray-500 dark:text-gray-300">
         Thanks for playing TOLDLE. This is 9dog, the creator of the game.
       </p>
-      <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300"></p>
       <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
-        I would like to let you know that the last daily TOLDLE will be on April
-        11, 2022. After that, I will probably make it free mode with no daily
-        wait, but for now things are up in the air.
+        I would like to let you know that the last daily TOLDLE was on April 11,
+        2022. After that, I will probably make it free mode with no daily wait,
+        but for now things are up in the air.
       </p>
       <p className="mt-5 mb-5 text-lg text-gray-500 dark:text-gray-300">
         The biggest reason for closing is that I have no more good answers. Just
