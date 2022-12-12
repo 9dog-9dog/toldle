@@ -1,7 +1,5 @@
 import { MAX_WORD_LENGTH } from './settings'
 
-// NOTE(9dog): The guesses should have tailing space
-// if their length is less than MAX_WORD_LENGTH
 export const WORDS = [
   'twitch', // 2022-03-19
   'degens', // 2022-03-20
@@ -35,6 +33,7 @@ export const WORDS = [
   'thanku', // 2022-04-11
 
   // unused
+  /*
   'dotol', // 2022-04-12
   'dotol', // 2022-04-13
   'dotol', // 2022-04-14
@@ -57,4 +56,5 @@ export const WORDS = [
   'dotol', // 2022-04-28
   'dotol', // 2022-04-29
   'dotol', // 2022-04-30
+  */
 ].map((word) => word.padEnd(MAX_WORD_LENGTH))
